@@ -1,0 +1,47 @@
+nav {
+  background-color: #fffdfd;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #616060;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.main-section {
+  background-image: url('../img/img-main\ copia.jpg');
+  background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15rem;
+  color: #5c5b5b;
+  text-align: justify;
+}
+
+.card {
+  height: 100px;
+}
+
+.card img {
+  height: 250px;
+}

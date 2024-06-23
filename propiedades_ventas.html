@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedades en Venta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inmobiliaria ADL</a></li>
+        <li><a href="./propiedades_ventas.html">Venta</a></li>
+        <li><a href="./propiedades_alquiler.html">Alquiler</a></li>
+      </ul>
+    </nav>
+    <main class="container-fluid main-section">
+      <h1 class="text">Propiedades en Venta</h1>
+      <style>
+        .container {
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+
+        .image {
+          width: 100%;
+          height: auto;
+        }
+
+        .text {
+          position: absolute;
+          top: 50%;
+          left: 45%; /* Ajusta este valor para mover el texto a la izquierda o derecha */
+          transform: translate(-120%, -300%);
+          background-color: rgba(
+            0,
+            0,
+            0,
+            0.3
+          ); /* Fondo semitransparente para mejorar la legibilidad */
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+        }
+      </style>
+    </main>
+    <div class="container mt-5">
+      <!-- Propiedades en venta -->
+      <section id="venta">
+        <h2>Propiedades en venta</h2>
+        <div id="allVentasPropiedades" class="row"></div>
+      </section>
+    </div>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f5bdbb41e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

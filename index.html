@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío - Inmobiliaria</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inmobiliaria ADL</a></li>
+        <li><a href="./propiedades_ventas.html">Venta</a></li>
+        <li><a href="./propiedades_alquiler.html">Alquiler</a></li>
+      </ul>
+    </nav>
+    <main class="container-fluid main-section">
+      <h1 class="text">Encuentra tu nueva propiedad</h1>
+      <style>
+        .container {
+          position: relative;
+          text-align: center;
+          width: 100%;
+        }
+
+        .image {
+          width: 100%;
+          height: auto;
+        }
+
+        .text {
+          position: absolute;
+          top: 50%;
+          left: 45%; /* Ajusta este valor para mover el texto a la izquierda o derecha */
+          transform: translate(-120%, -300%);
+          background-color: rgba(
+            0,
+            0,
+            0,
+            0.3
+          ); /* Fondo semitransparente para mejorar la legibilidad */
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+        }
+      </style>
+    </main>
+    <div class="container mt-5">
+      <!-- Propiedades en venta -->
+      <section id="venta">
+        <h2>Propiedades en venta</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://img.jamesedition.com/listing_images/2023/08/11/16/10/46/c00a6ba7-363b-4d0d-82d4-31218d911c0c/je/507x312xc.jpg"
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa en Petrohue</h5>
+                <p class="card-text">
+                  Esta casa de lujo está ubicado en una exclusiva zona
+                  residencial de Petrohue
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> petrihue, osorno, CA
+                  6346464
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 4 Habitaciones |
+                  <i class="fas fa-bath"></i> 4 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> 5.000</p>
+                <p class="text-danger">
+                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+                </p>
+                <p class="text-danger">
+                  <i class="fa-solid fa-ban"></i> No se permiten mascotas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://img.jamesedition.com/listing_images/2022/06/06/16/27/52/0470fa5f-bd37-4799-ab42-10ac5746527c/je/507x312xc.jpg"
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa en Olmue</h5>
+                <p class="card-text">
+                  Esta casa es un excelente y acogedor que está situado en lo
+                  alto de una montaña con impresionantes vistas a la cuidad
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 469 olmue, 5ta region,
+                  CA 54637389
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 2 Habitaciones |
+                  <i class="fas fa-bath"></i> 1 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>1.200</p>
+                <p class="text-success">
+                  <i class="fas fa-smoking"></i> Permitido fumar
+                </p>
+                <p class="text-success">
+                  <i class="fas fa-paw"></i> Mascotas permitidas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://img.jamesedition.com/listing_images/2024/05/29/15/08/08/ab19a7f7-5139-4edc-b859-edc6f03b298e/je/507x312xc.jpg"
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Penthouse de lujo con terraza panorámica Villarica
+                </h5>
+                <p class="card-text">
+                  Este casa de lujo ofrece una terraza panorámica con vistas
+                  espectaculares para disfrutar en familia
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> Villarica, Chile, CA
+                  7467464
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 3 Habitaciones |
+                  <i class="fas fa-bath"></i> 3 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> 4.500</p>
+                <p class="text-danger">
+                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+                </p>
+                <p class="text-success">
+                  <i class="fas fa-paw"></i> Mascotas permitidas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./propiedades_ventas.html" class="btn btn-dark"
+          >Ver todas las propiedades en venta</a
+        >
+      </section>
+      <hr />
+      <!-- Propiedades en alquiler -->
+      <section id="alquiler" class="mb-5">
+        <h2>Propiedades en alquiler</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://e00-telva.uecdn.es/assets/multimedia/imagenes/2017/10/24/15088486323639.jpg"
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Apartamento en el centro de la ciudad
+                </h5>
+                <p class="card-text">
+                  Este apartamento de 2 habitaciones está ubicado en el corazón
+                  de la ciudad, cerca de todo.
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Main Street,
+                  Anytown, CA 91234
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 2 Habitaciones |
+                  <i class="fas fa-bath"></i> 2 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> 2.000</p>
+                <p class="text-danger">
+                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+                </p>
+                <p class="text-success">
+                  <i class="fas fa-paw"></i> Mascotas permitidas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://img-v2.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1253i215%2Fj21xzg2pekb345tr8fy4yq3997i215&option=N&h=472&permitphotoenlargement=false"
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Apartamento luminoso con vista al mar
+                </h5>
+                <p class="card-text">
+                  Este hermoso apartamento ofrece una vista impresionante al mar
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 456 Ocean Avenue,
+                  Seaside Town, CA 56789
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 3 Habitaciones |
+                  <i class="fas fa-bath"></i> 3 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> 2,500</p>
+                <p class="text-success">
+                  <i class="fas fa-smoking"></i> Permitido fumar
+                </p>
+                <p class="text-success">
+                  <i class="fas fa-paw"></i> Mascotas permitidas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/813211306/es/foto/edificios-hist%C3%B3ricos-en-la-ciudad-de-nueva-york.jpg?s=612x612&w=0&k=20&c=nOMlaq91gbBEnVs-JWi_0mjhsw2vEqpcymM2Po-wJYg="
+                class="card-img-top"
+                alt="Imagen del departamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Condominio moderno en zona residencial
+                </h5>
+                <p class="card-text">
+                  Este elegante condominio moderno está ubicado en una tranquila
+                  zona residencial
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Main Street,
+                  Anytown, CA 91234
+                </p>
+                <p>
+                  <i class="fas fa-bed"></i> 2 Habitaciones |
+                  <i class="fas fa-bath"></i> 2 Baños
+                </p>
+                <p><i class="fas fa-dollar-sign"></i> 2,200</p>
+                <p class="text-danger">
+                  <i class="fas fa-smoking-ban"></i> No se permite fumar
+                </p>
+                <p class="text-danger">
+                  <i class="fas fa-ban"></i> No se permiten mascotas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./propiedades_alquiler.html" class="btn btn-dark"
+          >Ver todas las propiedades en alquiler</a
+        >
+      </section>
+    </div>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f5bdbb41e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
